@@ -1,36 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Omar Paredes</title>
+
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
-</head>
-<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
-    <nav>
-        <div class="hamburguer">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+</head>
+
+<body class="layout-portfolio">
+
+    <div class="site-header site-header-portfolio">
+        <div class="site-nav-animation-wrapper menu-animation-wrapper">
+            <div class="site-nav-animated-background menu-animated-background"></div>
+        </div>
+        <a href="/" class="menu " aria-label="Site navigation">
+            <span class="menu-icon-line-1 menu-icon-line"></span>
+            <span class="menu-icon-line-2 menu-icon-line"></span>
+            <span class="menu-icon-line-3 menu-icon-line"></span>
+        </a>
+
+        <div class="site-nav-overlay js-nav">
+            <div class="nav-content">
+                <div class="js-nav-header nav-header">
+                    <span class="nav-header-text">Omar Paredes</span>
+                    <div class="nav-header-line js-nav-header-line"></div>
+                </div>
+
+                <ul class="nav-categories">
+                    <li class="nav-category js-nav-animate"><a href="" class="nav-link">Page</a></li>
+                    <li class="nav-category js-nav-animate"><a href="" class="nav-link">Page</a></li>
+                    <li class="nav-category js-nav-animate"><a href="" class="nav-link">Page</a></li>
+                    <li class="nav-category js-nav-animate"><a href="" class="nav-link">Page</a></li>
+                </ul>
+
+                <div class="nav-sublinks js-nav-animate">
+                    <div class="js-nav-animate">
+                        <a class="nav-link nav-sublink" href="">Link</a>
+                        <a class="nav-link nav-sublink" href="">Link</a>
+                        <a class="nav-link nav-sublink" href="">Link</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <ul class="nav-links">
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Projects</a></li>
-        </ul>
-    </nav>
+        <!-- <h1 class="site-name site-name-portfolio">
+            <a class="siteLogoLink " href="" aria-label="Start page">
+                <svg class="siteHead-logoMark" xmlns="http://www.w3.org/2000/svg" width="47.25" height="26" viewBox="0 0 47.25 26">
+                    <path fill="currentColor" d="M1302.67,72.311a0.994,0.994,0,0,0-1.78-.016l-15.91,23.358a0.775,0.775,0,0,0,.7,1.328h10.61a3.292,3.292,0,0,0,2.47-1.347l1.81-2.793a0.967,0.967,0,0,1,1.75,0l1.81,2.793a3.311,3.311,0,0,0,2.48,1.347h10.6a0.793,0.793,0,0,0,.73-1.344Zm-12.42,12.739c0.5-.727,1.22-1.782,1.6-2.344s1.09-1.622,1.58-2.356l5.4-8.01a0.778,0.778,0,0,0-.71-1.332l-25.58-.032a1.611,1.611,0,0,0-1.61,1.607v7.7a1.609,1.609,0,0,0,1.61,1.6l7.84,0a1.607,1.607,0,0,1,1.6,1.6V95.437c0,0.883.41,1.011,0.91,0.284Zm0,0c0.5-.727,1.22-1.782,1.6-2.344s1.09-1.622,1.58-2.356l5.4-8.01a0.778,0.778,0,0,0-.71-1.332l-25.58-.032a1.611,1.611,0,0,0-1.61,1.607v7.7a1.609,1.609,0,0,0,1.61,1.6l7.84,0a1.607,1.607,0,0,1,1.6,1.6V95.437c0,0.883.41,1.011,0.91,0.284Z" transform="translate(-1270.94 -70.969)"/>
+                </svg>
+            </a>
+        </h1> -->
 
-    <section class="landing">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, aliquam aut iusto dicta provident similique vel, eius quidem totam numquam soluta officia et obcaecati laborum mollitia, temporibus laudantium. Porro, nam?</p>
-    </section>
-    
+        <div class="site-nav-animation-wrapper site-search-animation-wrapper">
+            <div class="site-nav-animated-background site-search-animated-background"></div>
+        </div>
 
-    <script src="app.js"></script>
+        <a href="#" class="site-search js-search" aria-label="Search site">
+            <span class="site-search-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 38.96 41.469">
+                    <circle class="site-search-icon-circle" fill="none" stroke-width="4px" cx="16.465" cy="16.484" r="14.465"/>
+                    <path class="site-search-icon-line" d="M2791.72,95.441l3.03-3.034,13.1,13.968-3.03,3.034Z" transform="translate(-2768.88 -67.938)"/>
+                </svg>
+            </span>
+            <span class="site-search-close-icon">
+                <span class="site-search-close-icon-line site-search-close-icon-line-1"></span>
+                <span class="site-search-close-icon-line site-search-close-icon-line-2"></span>
+            </span>
+        </a>
+
+        <div class="js-search-overlay site-nav-overlay-search">
+            <div class="site-search-content">
+                <input placeholder="Search…" type="text" class="js-search-input siteSearchInput">
+                <div class="site-search-content-results js-site-search-content-results">
+                    <div class="site-search-content-results-list"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="content-wrapper heroSection">
+        <h3 class="portfolio-intro-subheader">Omar Paredes</h3>
+        <h2 class="single-page-header portfolio-intro-header">I develop <span class="ampersand">&amp;</span> build digital products.</h2>
+    </div>
+
+    <script>
+        var app = {
+            ready: (callback) => {
+                // In case the document is already rendered
+                if (document.readyState!='loading') callback();
+                else document.addEventListener('DOMContentLoaded', callback);
+            },
+            menu: {},
+            search: {},
+            keys: {},
+            animations: {
+                tracked: []
+            }
+        };
+    </script>
+    <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
