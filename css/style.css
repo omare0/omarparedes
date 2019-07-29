@@ -519,55 +519,6 @@ p {
 	background-color: #2b2f3c
 }
 
-/* @font-face {
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 200;
-	src: url("font-files/Inter-ExtraLight-BETA.woff2") format("woff2"), url("font-files/Inter-ExtraLight-BETA.woff") format("woff")
-}
-
-@font-face {
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 400;
-	src: url("font-files/Inter-Regular.woff2") format("woff2"), url("font-files/Inter-Regular.woff") format("woff")
-}
-
-@font-face {
-	font-family: 'Inter';
-	font-style: italic;
-	font-weight: 400;
-	src: url("font-files/Inter-Italic.woff2") format("woff2"), url("font-files/Inter-Italic.woff") format("woff")
-}
-
-@font-face {
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 600;
-	src: url("font-files/Inter-SemiBold.woff2") format("woff2"), url("font-files/Inter-SemiBold.woff") format("woff")
-}
-
-@font-face {
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 700;
-	src: url("font-files/Inter-Bold.woff2") format("woff2"), url("font-files/Inter-Bold.woff") format("woff")
-}
-
-@font-face {
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 800;
-	src: url("font-files/Inter-ExtraBold.woff2") format("woff2"), url("font-files/Inter-ExtraBold.woff") format("woff")
-}
-
-@font-face {
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 900;
-	src: url("font-files/Inter-Black.woff2") format("woff2"), url("font-files/Inter-Black.woff") format("woff")
-} */
-
 @-webkit-keyframes rotateplane {
 	0% {
 		-webkit-transform: perspective(120px)
@@ -748,7 +699,7 @@ p {
 	position: absolute;
 	width: 800px;
 	height: 800px;
-	background-color: #1a237e;
+	background-color: #19375f;
 	border-radius: 50%;
 	pointer-events: none;
 	-webkit-transform: scale(0, 0);
@@ -832,7 +783,7 @@ p {
 	opacity: 0;
 	color: #fff;
 	pointer-events: none;
-	background-color: #1a237e;
+	background-color: #19375f;
 	overflow: hidden
 }
 
@@ -849,7 +800,7 @@ p {
 	opacity: 0;
 	color: #fff;
 	pointer-events: none;
-	background-color: #1a237e;
+	background-color: #19375f;
 	overflow: scroll
 }
 
@@ -920,7 +871,7 @@ p {
 	padding: 0 10px;
 	z-index: 1;
 	position: relative;
-	background-color: #1a237e
+	background-color: #19375f
 }
 
 .nav-categories {
@@ -1059,7 +1010,7 @@ p {
 	padding-top: 75px;
 	padding-right: 55%;
 	padding-left: 50px;
-	background-color: #1a237e;
+	background-color: #19375f;
 	text-align: left;
 	position: relative;
 	box-sizing: border-box
@@ -2147,30 +2098,34 @@ a.underlined:hover {
 }
 
 .heroSection {
-	height: 100%;
+	height: 100vh;
 	position: relative;
 	margin-top: 0;
-	padding-top: 5vh
+	padding-top: 5vh;
 }
 
 .portfolio-intro-header {
 	position: absolute;
 	padding: 0 20px;
-	top: 38.5%;
+	top: 44.5%;
 	left: 0;
-	right: 0
+	right: 0;
+
+	font-family: "DarkerGrotesqueLight", Source Sans Pro, Helvetica Neue, Arial, sans-serif;
 }
 
 .portfolio-intro-subheader {
 	position: absolute;
 	padding: 0 20px;
-	top: 34.5%;
+	top: 40.5%;
 	left: 0;
 	right: 0;
 	text-transform: uppercase;
-	font-size: 11px;
+	font-size: 13px;
 	letter-spacing: 5px;
-	font-weight: 600
+	font-weight: 600;
+
+	font-family: "DarkerGrotesqueBlack", Source Sans Pro, Helvetica Neue, Arial, sans-serif;
 }
 
 .gridItems-peak {
@@ -2628,3 +2583,65 @@ a.underlined:hover {
 .highlight .il {
 	color: #099
 }
+
+.text-page {
+	text-align: justify;
+	background: #19375f;
+	color: #FFF;
+	display: grid;
+	grid-template-columns:  1fr 1fr 1fr;
+	grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
+	height: 50vh;
+}
+
+::selection {
+	background: #a2aebe;
+	color: #19375f;
+}
+
+.text-page::selection {
+	background: #FFF;
+	color: #19375f;
+}
+
+.brand {
+	font-size: 30px;
+	text-align: center;
+	height: 10vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.scroll-indicator {	
+	position: absolute;
+	left: 50%;
+	font-size: 30px;
+	color: #19375f;
+	
+	-webkit-animation: bounce 1s infinite; 
+	animation: bounce 1s infinite;
+}
+
+@-webkit-keyframes bounce {
+	0% { bottom: 0%; opacity: 1;}
+	100%   { bottom: 1.5%; opacity: 0;}
+	/* 100% { bottom: 0%; opacity: 0;} */
+}
+
+@keyframes bounce {
+	0% { bottom: 1.5%; opacity: 1;}
+	100%   { bottom: 0%; opacity: 0;}
+	/* 100% { bottom: 0%; opacity: 0;} */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* 
+color1: #19375F;
+color2: #B3C8FB;
+color3: #D8A31A;
+color4: #F1F1E6;
+*/
